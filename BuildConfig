@@ -13,7 +13,7 @@ spec:
   output:
     to:
       kind: ImageStreamTag
-      name: 'mycentos7:latest'
+      name: 'centos7:latest'
   postCommit: {}
   resources: {}
   runPolicy: Serial
