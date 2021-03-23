@@ -2,8 +2,8 @@ apiVersion: build.openshift.io/v1
 kind: BuildConfig
 metadata:
   creationTimestamp: '2021-03-23T15:20:26Z'
-  name: centos7-test
-  namespace: myproject
+  name: centos7-httpd
+  namespace: my-project
   resourceVersion: '453943'
   selfLink: /apis/build.openshift.io/v1/namespaces/myproject/buildconfigs/centos7-test
   uid: 4ba31515-8beb-11eb-887f-080027a864dc
