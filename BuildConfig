@@ -1,0 +1,31 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  creationTimestamp: '2021-03-23T15:20:26Z'
+  name: centos7-test
+  namespace: myproject
+  resourceVersion: '453943'
+  selfLink: /apis/build.openshift.io/v1/namespaces/myproject/buildconfigs/centos7-test
+  uid: 4ba31515-8beb-11eb-887f-080027a864dc
+spec:
+  failedBuildsHistoryLimit: 5
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'mycentos7:latest'
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    contextDir: dockerfile
+    git:
+      uri: 'https://github.com/redrob101/openshift-app.git'
+    type: Git
+  strategy:
+    dockerStrategy: {}
+    type: Docker
+  successfulBuildsHistoryLimit: 5
+  triggers: []
+status:
+  lastVersion: 5
